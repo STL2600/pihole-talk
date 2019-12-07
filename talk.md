@@ -179,6 +179,16 @@ If you don't need or want to set your whole network to use the pi hole, you can 
 
 :::
 
+## Optional - Setup a reverse proxy
+
+::: notes
+
+For access to the web interface, if you want a valid cert on the SSL interface.
+
+The pihole must be the default server in order to work.
+
+:::
+
 # Additional Notes
 
 ## Caching
