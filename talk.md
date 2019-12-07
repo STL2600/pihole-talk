@@ -132,8 +132,23 @@ docker-compose up -d
 
 ::: notes
 
-Since the pihole will be your DNS server, and optionally DHCP as well, it will need a static IP
-We covered this for the pi, but for docker and a standalone machine you'll need to do it yourself.
+ - Since the pihole will be your DNS server, and optionally DHCP as well, it will need a static IP
+ - We covered this for the pi, but for docker and a standalone machine you'll need to do it yourself.
+
+:::
+
+## Open your firewall
+
+ - `53 tcp / udp`
+ - `67 udp`
+ - `80 tcp`
+ - `443 tcp`
+
+::: notes
+
+ - Port 53 is for DNS
+ - Port 67 is for DHCP
+ - Ports 80 and 443 are for the web server
 
 :::
 
